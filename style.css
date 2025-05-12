@@ -1,0 +1,67 @@
+/* Obecné styly pro bloky/karty */
+.block {
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* Blok upozornění */
+.block.alert {
+    background-color: yellow;
+}
+
+/* Nadpisy */
+h1, h2, h3, h4, h5, h6 {
+    color: rgb(1, 100, 200);
+}
+
+/* Tlačítko Detail */
+a.detail-button {
+    display: inline-block;
+    background-color: rgba(0, 0, 255, 0.5);
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Blok Nejprodávanější produkty */
+.block.best-sellers {
+    background-color: lightpink;
+}
+
+/* Bloky/karty s produkty */
+.block.product {
+    background-color: lightblue;
+    display: inline-block;
+    width: 30%;
+    margin: 1%;
+    vertical-align: top;
+}
+
+/* Ostatní bloky */
+.block.default {
+    background-color: lightgray;
+}
+
+/* Recenze */
+.review {
+    border: 1px dashed black;
+    padding: 10px;
+}
+
+/* Obrázky - jednotná výška a zachování poměru stran */
+img {
+    height: 300px;
+    object-fit: cover;
+    width: 100%;
+}
+
+
+/* Responsivita - karty pod sebe na úzkém displeji */
+@media (max-width: 768px) {
+    .block.bedding {
+        width: 100%;
+        margin: 0 0 10px 0;
+    }
+}
